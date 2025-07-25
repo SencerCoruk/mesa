@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Malzemecilik - İletişim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="loader-text">İletişim Bilgileri</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="örneklogo.png" alt="Mesa Malzemecilik Logo" onerror="this.style.display='none'">
+                <h2>MESA MALZEMECİLİK</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="urunler.html">Ürünlerimiz</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adres</h3>
+                    <p>
+                        Örnek Mahallesi<br>
+                        Malzeme Caddesi No: 123<br>
+                        34000 İstanbul, Türkiye
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p>
+                        <a href="tel:+902121234567">+90 (212) 123 45 67</a><br>
+                        <a href="tel:+905551234567">+90 (555) 123 45 67</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta</h3>
+                    <p>
+                        <a href="mailto:info@mesamalzemecilik.com">info@mesamalzemecilik.com</a><br>
+                        <a href="mailto:satis@mesamalzemecilik.com">satis@mesamalzemecilik.com</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Çalışma Saatleri</h3>
+                    <p>
+                        Pazartesi - Cuma: 08:00 - 18:00<br>
+                        Cumartesi: 09:00 - 16:00<br>
+                        Pazar: Kapalı
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Bize Mesaj Gönderin</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; color: #666;">
+                Size en uygun iletişim yöntemini seçin - E-posta formu veya WhatsApp üzerinden anında iletişim
+            </p>
+            
+            <!-- Communication Options -->
+            <div class="communication-options">
+                <div class="comm-option">
+                    <div class="comm-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-posta ile İletişim</h3>
+                    <p>Detaylı sorularınız için form aracılığıyla bize ulaşın</p>
+                    <button class="btn btn-secondary toggle-form" data-target="email-form">Formu Göster</button>
+                </div>
+                
+                <div class="comm-option">
+                    <div class="comm-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp ile İletişim</h3>
+                    <p>Anında yanıt almak için WhatsApp üzerinden iletişime geçin</p>
+                    <a href="https://wa.me/905462116438?text=Merhaba%20Mesa%20Malzemecilik%2C%20ürünleriniz%20hakkında%20bilgi%20almak%20istiyorum." 
+                       target="_blank" class="btn btn-primary whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp'ta Mesaj Gönder
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Email Form Container -->
+                <div class="form-container" id="email-form" style="display: none;">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: #2c3e50;">
+                        <i class="fas fa-envelope" style="color: #D4AF37; margin-right: 10px;"></i>
+                        E-posta Formu
+                    </h3>
+                    <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                        Aşağıdaki formu doldurarak bizimle iletişime geçebilirsiniz.
+                    </p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Ad *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Soyad *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-posta *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Şirket/Kurum</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Konu seçiniz...</option>
+                                <option value="genel">Genel Bilgi</option>
+                                <option value="urun">Ürün Sorgusu</option>
+                                <option value="fiyat">Fiyat Teklifi</option>
+                                <option value="siparis">Sipariş</option>
+                                <option value="teknik">Teknik Destek</option>
+                                <option value="sikayet">Şikayet</option>
+                                <option value="oneri">Öneri</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                placeholder="Lütfen mesajınızı detaylı bir şekilde yazınız..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <span class="checkmark"></span>
+                                Kişisel verilerimin işlenmesine ve tarafıma bilgilendirme yapılmasına onay veriyorum. *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Mesajı Gönder
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-details">
+                    <h3>Doğrudan İletişim</h3>
+                    <div class="contact-details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-user-tie"></i>
+                            <div>
+                                <h4>Yönetici</h4>
+                                <p>Salim Mermer</p>
+                                <p><a href="tel:+905551234567">+90 507 541 38 82</a></p>
+                                <p><a href="mailto:salim@mesamalzemecilik.com">salim@mesamalzemecilik.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-calculator"></i>
+                            <div>
+                                <h4>Finans</h4>
+                                <p>Ramazan Mermer</p>
+                                <p><a href="tel:+905462116438">+90 (546) 211 64 38</a></p>
+                                <p><a href="https://wa.me/905462116438?text=Merhaba%20Mesa%20Malzemecilik%2C%20finans%20konusunda%20bilgi%20almak%20istiyorum." 
+                                      target="_blank" class="whatsapp-link">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h4>Lojistik</h4>
+                                <p>Fatma Kaya</p>
+                                <p><a href="tel:+905551234569">+90 555 123 45 69</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Sosyal Medya</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/905462116438?text=Merhaba%20Mesa%20Malzemecilik%2C%20sosyal%20medya%20üzerinden%20iletişime%20geçmek%20istiyorum." 
+                               target="_blank" class="social-link whatsapp-social" title="WhatsApp">
+                               <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Konumumuz</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Harita burada görüntülenecek</p>
+                    <small>Google Maps entegrasyonu için API anahtarı gereklidir</small>
+                </div>
+                <!-- Gerçek projede Google Maps API'sı burada yer alacak -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="400" frameborder="0"></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Minimum sipariş miktarı nedir?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Minimum sipariş miktarı ürün türüne göre değişmektedir. Detaylı bilgi için satış danışmanlarımızla iletişime geçebilirsiniz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Teslimat süresi ne kadar?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Stokta bulunan ürünler için 1-3 iş günü, özel sipariş ürünler için 5-10 iş günü teslimat süremiz bulunmaktadır.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Hangi illere teslimat yapıyorsunuz?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Türkiye'nin tüm illerine kargo ve nakliye ile teslimat yapıyoruz. Büyük siparişlerde ücretsiz teslimat imkanı sağlıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Ödeme seçenekleri nelerdir?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nakit, kredi kartı, havale/EFT ve vadeli ödeme seçenekleri mevcuttur. Kurumsal müşterilerimize özel vade imkanları sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mesa Malzemecilik</h3>
+                    <p>Kaliteli malzemeler ve güvenilir hizmet</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="urunler.html">Ürünlerimiz</a></li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-phone"></i> +90 XXX XXX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> info@mesamalzemecilik.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mesa Malzemecilik. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+    </div> <!-- End Page Content -->
+
+    <script src="script.js"></script>
+</body>
+</html> 
